@@ -7,10 +7,13 @@
     function krasot(){
         var kr=document.getElementById("krasa").value;
         document.getElementById("fons").style="background-color:"+kr;
+        document.getElementById("fons").innerHTML = "Krāsa nomainīta!"
     }
     </script>
 </head>
 <body>
+    <button type="button" onclick='document.getElementById("fons").innerHTML 
+                = "Krāsa nomainīta!"'>Click Me!</button>
 <form>
   <div id="fons" style="background-color:lightgrey">Izvēlies krāsu!</div>
   <input type="color" id="krasa" value="#00ff00" onclick="krasot();">
